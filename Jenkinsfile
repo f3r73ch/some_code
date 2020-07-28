@@ -6,6 +6,5 @@ pipeline {
         echo 'hello from the trigger-f3r'
       }
     }
-
   }
 }
