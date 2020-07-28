@@ -7,6 +7,12 @@ pipeline {
       }
     }
 
+    stage('after echo') {
+      steps {
+        echo 'after echo stage'
+      }
+    }
+
   }
   triggers {
     cron('H/15 * * * *')
