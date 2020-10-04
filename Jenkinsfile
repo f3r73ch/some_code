@@ -9,6 +9,11 @@ pipeline {
         echo 'hello from the echo STAGE'
       }
     }
+    stage('after') {
+      steps {
+        echo 'hello from the AFTER STAGE'
+      }
+    }
 
   }
 }
