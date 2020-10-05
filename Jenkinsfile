@@ -9,7 +9,7 @@ pipeline {
         echo 'hello from the echo STAGE'
       }
     }
-    stage('after') {
+    stage('after TRIGGER') {
       steps {
         echo 'hello from the AFTER STAGE'
       }
