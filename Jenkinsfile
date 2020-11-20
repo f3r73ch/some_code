@@ -1,8 +1,8 @@
 pipeline {
   agent any
-  /*  triggers {
-   cron('H/15 * * * *')
-  }*/
+    triggers {
+      githubPush()
+    }
   stages {
     stage('echo') {
       steps {
@@ -11,11 +11,9 @@ pipeline {
     }
     stage('after TRIGGER') {
       steps {
-        def var1 = pwd
-
-        echo 'hello from the after TRIGGER STAGE / pwd = ${var1}'
+        //def var1 = pwd
+        echo 'hello from the after TRIGGER STAGE'
       }
     }
-
   }
 }
