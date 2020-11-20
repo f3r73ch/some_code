@@ -11,8 +11,9 @@ pipeline {
     }
     stage('after TRIGGER') {
       steps {
-	pwd
-        echo 'hello from the after TRIGGER STAGE'
+        def var1 = pwd
+
+        echo 'hello from the after TRIGGER STAGE / pwd = ${var1}'
       }
     }
 
