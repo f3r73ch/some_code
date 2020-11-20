@@ -11,6 +11,7 @@ pipeline {
     }
     stage('after TRIGGER') {
       steps {
+	pwd
         echo 'hello from the after TRIGGER STAGE'
       }
     }
